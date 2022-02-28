@@ -1,0 +1,50 @@
+<div class="col-10">
+    <app-navbar titulo_navbar="{{ titulo_navbar }}"></app-navbar>
+</div>
+<br><br><br><br><br>
+<button class="buttonRegistro">
+    <span  routerLink="/crear-formulario">Agregar libro nueva temporada</span> 
+    <svg width="15px" height="10px" viewBox="0 0 13 10">
+      <path d="M1,5 L11,5"></path>
+      <polyline points="8 1 12 5 8 9"></polyline>
+    </svg>
+  </button>
+
+<div class = "contenedor">
+		<div class="formularioU" >
+        <br>
+        <br>
+		<h3 class="titlelist">!Cambios y registros de nuestros libros para comprar¡</h3>
+        <table id="Clientes" *ngIf="listaBookshop.length > 0">
+            <tr>
+                <th>Nombre Del Libro</th>
+                <th>Categoria</th>
+                <th>Autor</th>
+                <th>Descripcion</th>
+                <th>Cantidad/Unidad</th>
+                <th>Precio</th>
+
+            </tr>
+
+            <tr *ngFor="let data_bookshop of listaBookshop">
+                <th>{{ data_bookshop.nombre_libro}}</th>
+                <th>{{ data_bookshop.categoria}}</th>
+                <th>{{ data_bookshop.autor}}</th>
+                <th>{{ data_bookshop.descripcion}}</th>
+                <th>{{ data_bookshop.cantidad_unidad}}</th>
+                <th>{{ data_bookshop.precio}}</th>
+                <th>
+                 <!--Routerlink para consumir y alimentar esa bandera en el id de la ruta-->
+                 <i class="fas fa-cash-register" [routerLink]="['/crear-formulario', data_bookshop._id]"></i>
+                 <i class="fab fa-shopify"(click)="venderBookshop(data_bookshop._id)"></i>
+
+                </th>
+            </tr>
+
+              
+
+
+<tbody id="myTable">
+    <h2 class="fw-bold fs-1 text-danger text-center" *ngIf="listaBookshop.length == 0">No hay datos registrados</h2>
+</tbody>
+

@@ -1,0 +1,55 @@
+
+ <app-navbar titulo_navbar="{{ titulo_navbar }}"></app-navbar>
+<!--Seccion edicion de precios-->
+<br><br><br><br><br>
+<div class="contenido w-75" style = "margin-bottom: 50%; margin-left: 15%;">
+<form class="row g-3"  [formGroup]="registroBookshopForm" (ngSubmit)="InfoRegistro()">
+    <div class="col-md-6">
+    <label for="nombreLibro" class="form-label">Nombre de libro</label>
+     <input type="text" formControlName = "nombre_libro" class="form-control">
+    <!--Mensaje-->
+      <p class="fw-bold text-danger" *ngIf="registroBookshopForm.get('nombre_libro')?.hasError('required') && registroBookshopForm.get('nombre_libro')?.touched">Se requiere el nombre del libro para agregar</p>
+    </div>
+    <div class="col-md-6">
+    <label for="categoriaLibro" class="form-label">Categoria</label>
+    <input type="text" formControlName="categoria" class="form-control">
+
+      <p class="fw-bold text-danger" *ngIf="registroBookshopForm.get('categoria')?.hasError('required') && registroBookshopForm.get('categoria')?.touched">Se requiere la categoria del libro para agregar</p>
+    </div>
+
+    <div class="col-12">
+    <label for="autorLibro" class="form-label">Autor</label>
+    <input type="text" formControlName="autor" class="form-control">
+    </div>
+
+    <p class="fw-bold text-danger" *ngIf="registroBookshopForm.get('autor')?.hasError('required') && registroBookshopForm.get('autor')?.touched">Se requiere el autor del libro para agregar</p>
+
+
+    <div class="col-12">
+    <label for="descripcionLibro" class="form-label">Descripción</label>
+    <input type="text" formControlName="descripcion" class="form-control">
+      <p class="fw-bold text-danger" *ngIf="registroBookshopForm.get('descripcion')?.hasError('required') && registroBookshopForm.get('descripcion')?.touched">Se requiere la descripcion del libro para agregar</p>
+    </div>
+
+    <div class="col-md-6">
+    <label for="cantidadLibro" class="form-label">Cantidad por Unidad</label>
+    <input type="text" formControlName="cantidad_unidad" class="form-control">
+      <p class="fw-bold text-danger" *ngIf="registroBookshopForm.get('cantidad_unidad')?.hasError('required') && registroBookshopForm.get('cantidad_unidad')?.touched">Se necesita el precio del libro para agregar</p>
+      <p class="fw-bold text-danger" *ngIf="registroBookshopForm.get('cantidad_unidad')?.hasError('pattern')">El precio no es valido, debe ser un numero</p>
+    </div>
+
+    <div class="col-md-2">
+        <label for="precioLibro" class="form-label">Precio</label>
+        <input type="text" formControlName= "precio" class="form-control">
+        <p class="fw-bold text-danger" *ngIf="registroBookshopForm.get('precio')?.hasError('required') && registroBookshopForm.get('precio')?.touched">Se necesita el precio del libro para agregar</p>
+        <p class="fw-bold text-danger" *ngIf="registroBookshopForm.get('precio')?.hasError('pattern')">El precio no es valido, debe ser un numero</p>
+    </div>
+
+    <div class="col-12">
+    <button type="submit" class="btn btn-primary">Actualizar</button>
+    </div>
+
+</form>
+</div>
+
+

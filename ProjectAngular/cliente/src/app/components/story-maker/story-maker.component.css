@@ -1,0 +1,17 @@
+
+h2{
+        margin-right: 15%;
+        font-size: 45px;
+        font-weight:100;
+        font-family: 'Pacifico', cursive;
+        color: #570530;
+        margin-left: 5%;
+    
+    }
+    h2:hover {
+        color: rgb(195, 86, 86);
+    }
+    
+    .colord{
+        background-color: #570530;
+    }

@@ -1,0 +1,62 @@
+.header{
+    background-image: url("https://lapiedradesisifo.com/wp-content/uploads/2014/12/the_open_book_by_editor02-d5bn0kh.jpg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      overflow: hidden;
+      width: 100%;
+      height: auto;
+
+}
+.contenido{
+    margin-bottom: 2%;
+}
+.card{
+    margin-top: 30px;
+}
+
+.titleFantasy{
+    margin-right: 15%;
+    font-size: 45px;
+    font-weight:100;
+    font-family: 'Pacifico', cursive;
+    color: rgb(231, 191, 191);
+    padding: 1rem;
+}
+.sectionfantasy{
+    background-color: #4b3e3e;
+}
+
+.titleFantasy:hover {
+    color: #b992a1;
+}
+h5{
+    color: #FFEDDB;
+    font-family:cursive;
+}
+
+.card-title{
+    font-family: 'Pacifico', cursive;
+    color:rgb(121, 22, 60);
+    font-size: 150%;
+}
+ .card-text{
+     font-weight: bold;
+ }
+
+.card-header{
+    color: #ccb0c5;
+    font-family:cursive;
+}
+
+.col-sm{
+    margin-left: 30px;
+
+
+}
+
+img{
+    height: 10%;
+}
+
+

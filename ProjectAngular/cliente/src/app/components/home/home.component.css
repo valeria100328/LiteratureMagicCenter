@@ -1,0 +1,173 @@
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .menu{
+        background-color:#C09797
+    }
+
+    .listaMenu{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+    #ribbon ::after{
+        content: "";
+        background-color: transparent;
+        display: inline-block;
+        height: 10px;
+        width: 8%;
+        margin: 0 auto;
+        position: relative;
+        left:auto;
+        margin-top: -50px;
+    }
+    #beststories{
+     background-color: rgb(192, 151, 151);
+     position: relative;
+     margin-top: -20px;
+     z-index: 10;
+    box-shadow: 0 0 10px black;
+   
+    }
+    #beststories img{
+        position: relative;
+        margin-top: -2px;
+    }
+    
+    #separator-ribbon{
+        width:100% ;
+        overflow:hidden;
+        position: relative;
+        z-index: 2;
+        
+    }
+    #separator-ribbon .content{
+        width: 150%;
+        height: 150px;
+        margin-left: -25%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
+
+    #cards{
+        margin-top: -50px;
+        margin-left: 7%
+
+    }
+    .cardsgenerate{
+        background-image: url("https://floreser.net.br/wp-content/uploads/2021/12/lighthouse-816546_1920-menor.jpg");
+        background-repeat: repeat-x;
+        background-size: 140%;
+    }
+    #separator-amiibos{
+        width: 100%;
+        overflow:hidden;
+        position: relative;
+        z-index: 2;
+        
+
+    }
+    #separator-amiibos .content{
+        background-color:rgba(255, 221, 153);
+        width: 110%;
+        height: 100px;
+        margin-left: -5%;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        
+        
+    }
+
+    .card-temas{
+        border: solid 10px white;
+        border-radius: 20px;
+        overflow: hidden;
+        transition: all ease-out 0.2s;
+        justify-content: center;
+        
+    }
+    .card-temas:hover{
+        transform: scale(1.05)
+    }
+    .col h1{
+        background-color: rgb(230, 204, 255);
+        border: 2px solid rgb(7, 7, 7);
+        text-align: center;
+        padding: 15px 30px 15px 30px;
+        margin: 40px;
+    }
+    .row:hover{
+    transform: scale(1.05)     
+    }
+    .container-fluid:hover{
+    transform: scale(1.05) 
+    }
+
+
+    .col-sm{
+    margin-left: 30px;
+
+
+}
+
+
+    .titleribon{
+        margin-right: 15%;
+        font-size: 45px;
+        font-weight:100;
+        font-family: 'Pacifico', cursive;
+        color: #570530;
+
+    }
+    .titleribon:hover {
+        color: rgb(195, 86, 86);
+    }
+    .phrase{
+        margin-right: 15%;
+        font-family: fantasy;
+        font-size: 22px;
+    }
+
+
+    h5{
+        margin-right: 15%;
+        font-family:sans-serif;
+        color: #570530
+
+    }
+
+
+    .menu{
+        background-color:#C09797
+    }
+    
+    .listaMenu{
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .text-center {
+        text-align: center;
+        font-size: 350%;
+        font-weight:100;
+        font-family: 'Pacifico', cursive;
+        color: #8a064a;
+    
+      }
+      .text-center:hover {
+        color: rgb(83, 20, 57);
+    }
+    .card-title{
+        font-weight:100;
+        font-family: 'Pacifico', cursive;
+        color: #8a064a;
+
+    }
+
+        li:hover,
+        button:hover{
+            background-color: rgb(104, 50, 79);
+        }
+

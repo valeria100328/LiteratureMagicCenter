@@ -1,0 +1,100 @@
+#Clientes {
+	font-family: 'Quicksand', sans-serif;
+	border-collapse: collapse;
+	width: 95%;
+	align-items: center;
+	margin:2%;
+}
+
+#Clientes td, #Clientes th {
+  border: 1px solid #ddd;
+  padding: 1px;
+}
+
+#Clientes tr:nth-child(even){background-color: #f2f2f2;}
+
+#Clientes tr:hover {background-color: #ddd;}
+
+#Clientes th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color:rgb(83, 20, 57);
+  color: white;
+  box-shadow: 13px 13px 20px #74418a, -13px -13px 20px #74418a;
+}
+
+.titlelist{
+    margin-right: 15%;
+    font-size: 45px;
+    font-weight:100;
+    font-family: 'Pacifico', cursive;
+    color: #570530;
+    margin-left: 5%;
+
+}
+.titlelist:hover {
+    color: rgb(195, 86, 86);
+}
+
+.buttonRegistro {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    float: right;
+    margin-right: 0px;
+    color:#020202;
+    margin-right: 5%;
+   }
+   
+   .buttonRegistro:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: rgb(168, 96, 138);
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+   }
+   
+   .buttonRegistro span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #020202;
+   }
+   
+   .buttonRegistro svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #070707;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+   }
+   
+   .buttonRegistro:hover:before {
+    width: 100%;
+    background: rgb(221, 171, 200);
+   }
+   
+   .buttonRegistro:hover svg {
+    transform: translateX(0);
+   }
+   
+   .buttonRegistro:active {
+    transform: scale(0.95);
+   }
+

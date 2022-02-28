@@ -1,0 +1,12 @@
+
+<app-navbar titulo_navbar="{{ titulo_navbar }}"></app-navbar>
+
+<br><br><br><br>
+<h1>Notes</h1>
+<div class="notes">
+    <ul class="colord">
+        <li *ngFor="let note of notes"></li>
+      </ul>
+  <input type="text" [(ngModel)]="note">
+  <button (click)="createNote()">Create note</button>
+</div>

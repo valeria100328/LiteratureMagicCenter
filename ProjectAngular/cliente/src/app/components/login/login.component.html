@@ -1,0 +1,51 @@
+<div class="loginUsuarios">
+<div class="container h-800">
+    <div class="d-flex justify-content-center h-100">
+        <div class="user_card">
+            <div class="d-flex justify-content-center">
+                <div class="brand_logo_container">
+                    <img src="https://media.giphy.com/media/xU3lcspXpEXuUHj9Dj/giphy.gif" class="brand_logo" alt="Logo">
+                </div>
+            </div>
+
+
+<section class="login-container">
+    <div class="login  d-flex justify-content-center">
+    <form class="custom-form" method="post">
+        <p class="title">Logueate, lee y vive una agradable lectura</p>
+        <br>
+        <h5>”los libros son un escape. Una ventana hacia un mundo de magia y de fantasía.</h5>
+    <div class="login-form p-5">
+        <!--<app-slider></app-slider>-->
+            <form class="mb-3" [formGroup]="loginUsuariosForm" (ngSubmit)="accesoUsuario()">
+                <div class="mb-3">  
+                <i class="fas fa-user"></i>
+                <input type="usuario" formControlName="usuario" 
+                class="form-control login-input" placeholder="Ingrese su usuario">
+
+                <p class="fw-bold text-danger w-100 text center pt-2" *ngIf="loginUsuariosForm.get('usuario')?.hasError('required') && loginUsuariosForm.get('usuario')?.touched">El usuario es obligatorio por favor ingreselo</p>
+                <p class="fw-bold text-danger w-100 text center pt-2 " *ngIf="loginUsuariosForm.get('Usuario')?.hasError('pattern')">El usuario no es valido</p>
+                </div>
+
+                <i class="fas fa-key"></i>
+                <div class="mb-3">
+                <input type="password" formControlName="password" class="form-control" placeholder="Ingrese su contraseña">
+                <p class="fw-bold text-danger w-100 text center pt-2" *ngIf="loginUsuariosForm.get('password')?.hasError('pattern')">"La contraseña es requerida"</p>
+                </div>
+                <br>
+                
+                <!--Boton-->
+                <div class="d-grid gap-2">
+               <button class="login-buton" type="submit" [disabled]="loginUsuariosForm.invalid">
+                    <span>INGRESAR</span>
+                    <div class="liquid"></div>
+                  </button>
+                </div>
+            </form>
+    </div>
+
+</form>
+</div>
+</section>
+
+</div>
